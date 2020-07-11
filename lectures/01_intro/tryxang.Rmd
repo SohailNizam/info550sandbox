@@ -1,0 +1,50 @@
+---
+title: "Reproducible research"
+author: "David Benkeser"
+date: "2016/12/12"
+tldr: "Boy this sure is great!"
+recording: ""
+reading: "reproducible-research"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+---
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#012169",
+  header_font_google = google_font("DM Sans"),
+  text_font_google   = google_font("DM Sans", "400", "400i"),
+  code_font_google   = google_font("Courier Prime")
+)
+```
+
+One __slide is here__ and boy does it look great!
+
+$$X_1 + X_2 - X_3$$
+
+And here is some $X_1 + \alpha_2$
+
+```r
+with <- "some code"
+```
+
+???
+
+Here are my presenter notes
+	- say some cool stuff
+	- convince the children this is great
+
+---
+
+Another slide.
+
+---
+
+# Here's your first quiz
+
+<iframe src="https://pollev.com"
+width="100%" height="300px"
+frameborder="0">
+

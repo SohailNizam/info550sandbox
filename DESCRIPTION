@@ -1,0 +1,5 @@
+Package: info550
+Type: class
+Title: best class ever
+Version: 0.0.1
+Imports: rmarkdown, xaringan, xaringanthemer
