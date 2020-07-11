@@ -1,0 +1,43 @@
+sudo: required
+
+env:
+  global:
+  - secure: "ZshYLLuEBxOW3+NNtTMlIArHAXNnMF8Ll4R4JlNTqNyIjaKLkdd6qnM6HL3yiZH4ZdSvvI9jEH8HoWdT4wB1pNQ4AYbZtpAdUN6n6jiJHRIkZhcpJZemeHyYtMmKMA4URWmtfwTjM0QPf6SeqbbmrkYycS8l3olHfHemQPhleyu0/BMAuHLOGnjQGWR40ZXDLzHjtC0owv7avu8UwZDbD/B5NEd0VgnbaK7Wi12F8Q010vPX8bPRsp8G4MQKODpf+wz6oHcaLNiLrUu7wt2BjI8QCoxz0iBVNnMPx6/olGZy8C5sJ1ks9epUpOn317KoKIBTkorVg5XAkIXWQChFjcONEBH5LRDZeXKPmNu0fTMq+nN6sahdMyDZN/SLsd6RSI//iPZxuqxZThg8eys76TGgc0H/vo1bEJ7fGT6ynCt+VIWzQHLhWcl55pWGL1mWaora77twLT2DwelvVbyuXfZKIZbiGMkctDi9rqF5El/p68w0ovCveNmQtM+r8s27MzNLETLBkh3W9ti0hGTyeq3d76cpdbuAUBBVZ2qdNWhE1NOavheCramdcRizsEVTH/hBtX6I6iRe76wzXmQt13gJrvPye2pj+21iffbmUsxtkl2BT1+a7nH4loB9eYHOgGrrNf/Dl4aBrMSyu8OjHsuGACpAeI1VqCGwj+qSEs0="
+
+git:
+  depth: false
+
+language: r
+
+language: python
+python:
+  - "3.7"
+
+language: ruby
+rvm:
+  - 2.7
+
+before_install:
+  - gem install bundler
+  
+pandoc_version: 2.3.1
+
+before_script:
+- chmod +x ./_build.sh
+- chmod +x ./_deploy.sh
+
+script:
+- ./_build.sh
+- ./_deploy.sh
+
+after_script:
+- docker images
+
+before_deploy:
+- docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
+
+deploy:
+  provider: script
+  script: docker push slapnap/slapnap
+  on:
+    branch: master
