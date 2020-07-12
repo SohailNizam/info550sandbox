@@ -20,7 +20,7 @@ style_mono_accent(
 ```
 # Basics
 
-* Syllabus: here
+* Syllabus: here here
 * Course website: https://benkeser.github.io/info550
 
 
