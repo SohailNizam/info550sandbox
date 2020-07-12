@@ -1,6 +1,7 @@
-/lectures/**/*.html
-/lectures/**/*.css
-/homework/**/*.html
-/homework/**/*.css
+lectures/**/*.html
+lectures/**/*.css
+homework/**/*.html
+homework/**/*.pdf
+homework/**/*.css
 website/.jekyll-cache/*
 website/_site/*
