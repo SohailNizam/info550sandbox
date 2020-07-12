@@ -30,7 +30,7 @@ for RMD_FILE in ${CHANGED_RMD_FILES}
 do 
 	FILE_PATH=${RMD_FILE%/*}
 	rm -rf "tmp_${FILE_PATH:1}"
-	cp -r "${FILE_PATH}" "tmp_${FILE_PATH:1}"
+	cp -r "${FILE_PATH}/*" "tmp_${FILE_PATH:1}"
 done
 
 # remove contents from existing gh-pages branch
