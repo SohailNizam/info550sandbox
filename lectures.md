@@ -14,7 +14,7 @@ Clicking the title of the lecture will open the slides in your browser. The icon
 <ul id="archive">
 {% for lectures in site.data.lectures %}
       <li class="archiveposturl">
-        <span><a href="{{ site.url | slice: 0, num }}{{ site.baseurl }}/lectures/{{ lectures.dirname }}/{{ lectures.filename }}.html" target="_blank">{{ lectures.title }}</a></span><br>
+        <span><a href="{{ site.url | slice: 0, num }}{{ site.baseurl }}lectures/{{ lectures.dirname }}/{{ lectures.filename }}.html" target="_blank">{{ lectures.title }}</a></span><br>
 <span class = "postlower">
 <strong>tl;dr:</strong> {{ lectures.tldr }}</span>
 <strong style="font-size:100%; font-family: 'DM Sans', sans-serif; float:right; padding-right: .5em">
