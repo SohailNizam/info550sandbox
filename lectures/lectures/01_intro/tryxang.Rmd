@@ -1,8 +1,8 @@
 ---
 title: "Reproducible research"
 author: "David Benkeser"
-date: "2016/12/12"
-tldr: "Boy this sure is great!"
+date: "2016/12/13"
+tldr: "Boy this sure is really great!"
 recording: ""
 reading: "reproducible-research"
 output:

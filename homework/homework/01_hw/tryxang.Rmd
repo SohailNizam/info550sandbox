@@ -2,7 +2,7 @@
 title: "Reproducible research"
 author: "David Benkeser"
 date: "2016/12/12"
-due: "2020/09/12"
+due: "2020/09/13"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -18,7 +18,7 @@ style_mono_accent(
 )
 ```
 
-One __slide is here__ and boy does it look great!
+One __slide is here__ and boy does it look really great!
 
 $$X_1 + X_2 - X_3$$
 
