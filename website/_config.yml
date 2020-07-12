@@ -15,7 +15,7 @@ description: |
     environment (using Amazon Web Services EC2 and S3 services). Along the way, we will 
     cover a few other tools for data science including best coding practices, basic python, 
     software unit testing, and continuous integration services. 
-baseurl: "/info550sandbox" # the subpath of your site, e.g. /blog/
+baseurl: "info550sandbox" # the github directory
 url: "https://benkeser.github.io/" # the base hostname & protocol for your site
 
 # host the syllabus on google docs
