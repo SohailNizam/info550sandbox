@@ -4,18 +4,21 @@
 # build new/changed lectures and homeworks from Rmd 
 #--------------------------------------------------------
 
-# find which files have changed
-# `git` expects a `..` delimiter between commits, not `...`
-COMMIT_RANGE="$(echo ${TRAVIS_COMMIT_RANGE//.../..})"
-# find modified and added files for this commit (sanity check)
-CHANGED_FILES="$(git diff --diff-filter=MA --name-only ${COMMIT_RANGE})"
-echo $CHANGED_FILES
-# find modified and added Rmd files
-CHANGED_RMD_FILES="$(git diff --diff-filter=MA --name-only ${COMMIT_RANGE} -- | grep '.Rmd')"
-echo $CHANGED_RMD_FILES
+# finds all .Rmd lecture files
+RMD_LECTURE_FILES=$(find "lectures" -type f -name "*.Rmd")
+# finds all .Rmd homework files
+RMD_HOMEWORK_FILES=$(find "homework" -type f -name "*.Rmd")
 
-# build changed Rmd files using Rmarkdown
-for RMD_FILE in ${CHANGED_RMD_FILES}
+# build Rmd files using Rmarkdown
+for RMD_FILE in ${RMD_LECTURE_FILES}
+do 
+	FILE_PATH=${RMD_FILE%/*}
+	FILE_NAME=${RMD_FILE##*/}
+	Rscript -e "setwd('${TRAVIS_BUILD_DIR}/${FILE_PATH}/'); rmarkdown::render('${FILE_NAME}')"
+done
+
+# build Rmd files using Rmarkdown
+for RMD_FILE in ${RMD_HOMEWORK_FILES}
 do 
 	FILE_PATH=${RMD_FILE%/*}
 	FILE_NAME=${RMD_FILE##*/}
