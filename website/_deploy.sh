@@ -34,7 +34,7 @@ do
 done
 
 # remove contents from existing gh-pages branch
-cd info550
+cd info550sandbox
 git rm -rf *
 # replace with contents from master branch /website
 cp -r ../website/* ./

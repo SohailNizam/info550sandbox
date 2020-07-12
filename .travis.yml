@@ -1,15 +1,56 @@
 sudo: required
 
+# try python language
+language: python
+
+# github credentials
 env:
   global:
   - secure: "Ms8w4viJnzr4BzAkv6J79mzkFwbjPnOsNBzwD4ug43jIs2tfmBzz/KVfH5FIB+Fq6RBcy+717ivQGGjnt92CJBK7M73ugmM/LEkOKE4ebAColxbxYa06zWPEc2CVy/jbPsa7UV1FwduZyUiUlLZpc+/t1sTKGczJz28tpwvBdq7zUdXiDknoCHqZRXJoY7TSy3NQhqo0NcJsbO1Nk3aF0ygKNazuBHb10qIxax0FWckqTyfXQ25UDuWuyL/SneWv2Ak7uB8b7kUrOVEj2pFghCAsgIan9EdKJJm9OseqG1e+PR6iNU570BhnsDsOPmndjv1utJLJiOCs7XZVBwPvEZBHmoHbXWYyJDMLDYCf1naWgFe8hRCUKXrgkIVJVCcXvZSZNGKb3uBReBF+2JmjVW86KLqKelb7MTv07lP8bHwcx9dNST0A6sIrYSvI2WnAJ8wNgTm8bmYQxuTQiZw0KWLJTDdMkW7X5ypJPCv0eFiNg0ZBdgGOkqoAHjSrPaO7mQhHkxQeHC2dBq8Bie+rk/MbVKNqiIvoJnLSVi6sT0qjyqJK4i71DBOVHpVxxT6keS4qw6HeHFO2pprNCa39gneql8PX0ss8lV+NbOO2Iu27FPIk//ikalYSul7dzlRwSPIniVZHajr9GxACSbobVH3ZyLJUTrG72WjegOPzrVw="
 
+# clone whole git trees
 git:
   depth: false
 
-language: r
-  
+# only build on pushes of master branch
+branches:
+  only:
+   - master
+
+# installing R and R packages
+addons:
+  apt:
+    sources:
+    - r-packages-precise
+    packages:
+    - r-base-dev  
+    - r-recommended
+    - pandoc
+
 pandoc_version: 2.3.1
+
+# cache the library for faster builds
+cache:
+  directories:
+    - ~/Rlib
+
+# install the package and dependencies:
+# - create directory for R libraries (if not already exists)
+# - create .Renviron with location of R libraries
+# - define R repository in .Rprofile
+# - install devtools if not already installed
+# - install covr if not already installed
+# - update all installed packages
+# - install package with dependencies
+install:
+  - mkdir -p ~/Rlib
+  - echo 'R_LIBS=~/Rlib' > .Renviron
+  - echo 'options(repos = "http://cran.rstudio.com")' > .Rprofile
+  - Rscript -e 'if(!"rmarkdown" %in% rownames(installed.packages())) { install.packages("devtools", dependencies = TRUE) }'
+  - Rscript -e 'if(!"xaringan" %in% rownames(installed.packages())) { install.packages("devtools", dependencies = TRUE) }'
+  - Rscript -e 'if(!"xaringanthemer" %in% rownames(installed.packages())) { install.packages("devtools", dependencies = TRUE) }'
+  - Rscript -e 'update.packages(ask = FALSE, instlib = "~/Rlib")'
+  - Rscript -e 'devtools::install_deps(pkg = ".", dependencies = TRUE)'
 
 before_script:
 - chmod +x ./website/_build.sh
