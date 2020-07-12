@@ -1,0 +1,45 @@
+---
+title: "Info for INFO550"
+author: "David Benkeser"
+tldr: "Everything you need to know about the course."
+recording: ""
+reading: ""
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+---
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#012169",
+  header_font_google = google_font("DM Sans"),
+  text_font_google   = google_font("DM Sans", "400", "400i"),
+  code_font_google   = google_font("Courier Prime")
+)
+```
+# Basics
+
+* Syllabus: 
+* Course website: https://benkeser.github.io/info550
+
+
+
+???
+
+Here are my presenter notes
+	- say some cool stuff
+	- convince the children this is great
+
+---
+
+Another slide.
+
+---
+
+# Here's your first quiz
+
+<iframe src="https://pollev.com"
+width="100%" height="300px"
+frameborder="0">
+
