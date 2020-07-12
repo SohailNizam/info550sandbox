@@ -31,7 +31,6 @@ pandoc_version: 2.3.1
 
 # cache the library for faster builds
 cache:
-  - pip
   directories:
     - ~/Rlib
 
