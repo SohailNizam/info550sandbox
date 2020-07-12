@@ -34,6 +34,8 @@ cache:
   directories:
     - ~/Rlib
 
+cache: pip
+
 # install the package and dependencies:
 # - create directory for R libraries (if not already exists)
 # - create .Renviron with location of R libraries
@@ -49,6 +51,7 @@ install:
   - Rscript -e 'if(!"rmarkdown" %in% rownames(installed.packages())) { install.packages("rmarkdown", dependencies = TRUE) }'
   - Rscript -e 'if(!"xaringan" %in% rownames(installed.packages())) { install.packages("xaringan", dependencies = TRUE) }'
   - Rscript -e 'if(!"xaringanthemer" %in% rownames(installed.packages())) { install.packages("xaringanthemer", dependencies = TRUE) }'
+  - Rscript -e 'if(!"tinytex" %in% rownames(installed.packages())) { install.packages("tinytex", dependencies = TRUE) }'
   - sudo apt install python3-pip
   - pip3 --version
   - pip install pyyaml
