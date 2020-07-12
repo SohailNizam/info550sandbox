@@ -10,3 +10,4 @@ GitHub repository for INFO550 at Emory University Rollins School of Public Healt
 		- reading, tldr, title, and recording
 	- the yaml of homeworks should contain
 		- due and title 
+	- change the name of baseurl in _config to repo name
