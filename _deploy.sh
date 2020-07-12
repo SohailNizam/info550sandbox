@@ -14,26 +14,27 @@ echo $CHANGED_RMD_FILES
 # clone the repository
 git clone -b gh-pages \
   https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git \
-  info550
+  info550sandbox
 
 # restructuring the directory
 
 # make temporary directories of lectures and homeworks
 # that contain the current contents of the gh-pages branch
 mkdir tmp_lectures tmp_homework
-cp -r info550/lectures tmp_lectures
-cp -r info550/homework tmp_homework
+cp -r info550sandbox/lectures/* tmp_lectures
+cp -r info550sandbox/homework/* tmp_homework
 
 # copy directories that were changed this commit
 # into these temporary directories
 for RMD_FILE in ${CHANGED_RMD_FILES}
 do 
 	FILE_PATH=${RMD_FILE%/*}
-	cp -TRv "${FILE_PATH}/" "tmp_${FILE_PATH}"
+	rm -rf "tmp_${FILE_PATH:1}"
+	cp -r "${FILE_PATH}" "tmp_${FILE_PATH:1}"
 done
 
 # remove contents from existing gh-pages branch
-cd info550
+cd info550sandbox
 git rm -rf *
 # replace with contents from master branch /website
 cp -r ../website/* ./
