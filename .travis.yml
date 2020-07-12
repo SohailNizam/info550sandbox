@@ -31,10 +31,9 @@ pandoc_version: 2.3.1
 
 # cache the library for faster builds
 cache:
+  pip
   directories:
     - ~/Rlib
-
-cache: pip
 
 # install the package and dependencies:
 # - create directory for R libraries (if not already exists)
