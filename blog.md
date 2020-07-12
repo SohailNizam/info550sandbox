@@ -22,7 +22,7 @@ I blog semi-regularly about stuff. Most of my blog entries involve professional 
   {% endfor %}
 
 {% endif %} <!-- {{ post.categories | first }} -->
-<strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right">{{ post.date | date: '%d %b %Y' }}</strong> 
+<strong style="font-size:100%; font-family: 'DM Sans', sans-serif; float:right">{{ post.date | date: '%d %b %Y' }}</strong> 
 </span> 
 
 </li>

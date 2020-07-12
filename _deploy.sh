@@ -22,7 +22,10 @@ git clone -b gh-pages \
 # that contain the current contents of the gh-pages branch
 mkdir tmp_lectures tmp_homework
 cp -r info550sandbox/lectures/* tmp_lectures
+echo "All files in tmp_lectures and tmp_homework after initial copy"
+ls -l tmp_lectures
 cp -r info550sandbox/homework/* tmp_homework
+ls -l tmp_homework
 
 # copy directories that were changed this commit
 # into these temporary directories
@@ -33,9 +36,15 @@ do
 	cp -r "${FILE_PATH}/*" "tmp_${FILE_PATH:1}"
 done
 
+echo "All files in tmp_lectures and tmp_homework after for loop"
+ls -l tmp_lectures
+ls -l tmp_homework
+
 # remove contents from existing gh-pages branch
 cd info550sandbox
 git rm -rf *
+echo "All files in /info550sandbox after git rm"
+ls -l 
 # replace with contents from master branch /website
 cp -r ../website/* ./
 # move tmp_lectures and tmp_homeworks in and rename
@@ -44,7 +53,10 @@ mv tmp_lectures lectures
 cp -r ../tmp_homework ./
 mv tmp_homework homework
 
+echo "All files in /info550sandbox after copies"
 ls -l 
+ls -l lectures
+ls -l homework
 
 COMMIT_MESSAGE="update the website. rebuilt "${CHANGED_RMD_FILES}
 git add --all *

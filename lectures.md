@@ -12,13 +12,13 @@ Clicking the title of the lecture will open the slides in your browser. The icon
 <ul id="archive">
 {% for lectures in site.data.lectures %}
       <li class="archiveposturl">
-        <span><a href="{{ site.url }}{{ site.baseurl }}/lectures/{{ lectures.dirname }}/{{ lectures.filename }}.html" target="_blank">{{ lectures.title }}</a></span><br>
+        <span><a href="{{ site.url }}{{ site.baseurl }}lectures/{{ lectures.dirname }}/{{ lectures.filename }}.html" target="_blank">{{ lectures.title }}</a></span><br>
 <span class = "postlower">
 <strong>tl;dr:</strong> {{ lectures.tldr }}</span>
-<strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right; padding-right: .5em">
+<strong style="font-size:100%; font-family: 'DM Sans', sans-serif; float:right; padding-right: .5em">
 	<a href="https://github.com/{{ site.githubdir}}/tree/master/lectures/{{ lectures.dirname }}"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
 <a href="https://github.com/{{ site.githubdir}}/tree/master/lectures/{{ lectures.dirname }}/{{ lectures.filename}}.Rmd"><i class="fab fa-r-project"></i></a>&nbsp;&nbsp;
-<a href="{{ site.url }}{{ site.baseurl }}/readings#{{ lectures.reading }}"><i class="fas fa-book"></i></a>&nbsp;&nbsp;
+<a href="{{ site.url }}{{ site.baseurl }}readings#{{ lectures.reading }}"><i class="fas fa-book"></i></a>&nbsp;&nbsp;
 {% if lectures.recording == "" %}
 <i class="fas fa-video-slash"></i>
 {% else %}
