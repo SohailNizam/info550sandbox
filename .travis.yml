@@ -9,16 +9,8 @@ git:
 
 language: r
 
-language: python
-python:
-  - "3.7"
-
-language: ruby
-rvm:
-  - 2.7
-
-before_install:
-  - gem install bundler
+install:
+  - sudo apt-get install -y python3.7
   
 pandoc_version: 2.3.1
 
@@ -28,4 +20,4 @@ before_script:
 
 script:
 - ./website/_build.sh
-- ./_deploy.sh
+- ./website/_deploy.sh
