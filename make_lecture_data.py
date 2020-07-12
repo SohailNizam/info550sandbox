@@ -63,7 +63,7 @@ def make_data(site_dir, which_data):
     rmd_file = [f for f in all_files_in_dir if ('.Rmd' in f or '.rmd' in f)]
     # get yaml from rmd file
     with open(rmd_file[0]) as f:
-      config = yaml.load(get_yaml(f))
+      config = yaml.load(get_yaml(f), Loader=yaml.FullLoader)
     if which_data == "lecture":
       this_dict = { 
          "filename" : os.path.splitext(rmd_file[0])[0], 

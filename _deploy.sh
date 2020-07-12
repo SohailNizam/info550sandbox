@@ -21,10 +21,10 @@ git clone -b gh-pages \
 # make temporary directories of lectures and homeworks
 # that contain the current contents of the gh-pages branch
 mkdir tmp_lectures tmp_homework
-cp -r info550sandbox/lectures/* tmp_lectures
+cp info550sandbox/lectures/* tmp_lectures
 echo "All files in tmp_lectures and tmp_homework after initial copy"
 ls -l tmp_lectures
-cp -r info550sandbox/homework/* tmp_homework
+cp info550sandbox/homework/* tmp_homework
 ls -l tmp_homework
 
 # copy directories that were changed this commit
