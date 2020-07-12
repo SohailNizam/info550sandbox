@@ -26,6 +26,6 @@ ls -l
 
 COMMIT_MESSAGE="update the website. rebuilt "${CHANGED_RMD_FILES}
 git add --all *
-git commit -m ${COMMIT_MESSAGE}
+git commit -m "${COMMIT_MESSAGE}"
 git push -q origin gh-pages
 
