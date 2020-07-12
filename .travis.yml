@@ -52,6 +52,7 @@ install:
   - Rscript -e 'if(!"xaringan" %in% rownames(installed.packages())) { install.packages("xaringan", dependencies = TRUE) }'
   - Rscript -e 'if(!"xaringanthemer" %in% rownames(installed.packages())) { install.packages("xaringanthemer", dependencies = TRUE) }'
   - Rscript -e 'if(!"tinytex" %in% rownames(installed.packages())) { install.packages("tinytex", dependencies = TRUE) }'
+  - Rscript -e 'tinytex::install_tinytex()'
   - sudo apt install python3-pip
   - pip3 --version
   - pip install pyyaml
