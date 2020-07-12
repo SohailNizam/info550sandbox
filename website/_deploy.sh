@@ -25,7 +25,7 @@ ls -l
 ls -l lectures
 ls -l homework
 
-COMMIT_MESSAGE="update the website. rebuilt "${CHANGED_RMD_FILES}
+COMMIT_MESSAGE="update the website."
 git add --all *
 git commit -m "${COMMIT_MESSAGE}"
 git push -q origin gh-pages
