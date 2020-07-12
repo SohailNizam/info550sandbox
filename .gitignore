@@ -2,3 +2,5 @@
 /lectures/**/*.css
 /homework/**/*.html
 /homework/**/*.css
+website/.jekyll-cache/*
+website/_site/*
