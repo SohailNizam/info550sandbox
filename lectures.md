@@ -20,7 +20,7 @@ Clicking the title of the lecture will open the slides in your browser. The icon
 <strong style="font-size:100%; font-family: 'DM Sans', sans-serif; float:right; padding-right: .5em">
 	<a href="https://github.com/{{ site.githubdir}}/tree/master/lectures/{{ lectures.dirname }}"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
 <a href="https://github.com/{{ site.githubdir}}/tree/master/lectures/{{ lectures.dirname }}/{{ lectures.filename}}.Rmd"><i class="fab fa-r-project"></i></a>&nbsp;&nbsp;
-<a href="{{ site.url }}{{ site.baseurl }}/readings#{{ lectures.reading }}"><i class="fas fa-book"></i></a>&nbsp;&nbsp;
+<a href="{{ site.url | slice: 0, num }}{{ site.baseurl }}/readings#{{ lectures.reading }}"><i class="fas fa-book"></i></a>&nbsp;&nbsp;
 {% if lectures.recording == "" %}
 <i class="fas fa-video-slash"></i>
 {% else %}

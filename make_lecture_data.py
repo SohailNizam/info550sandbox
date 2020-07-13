@@ -78,7 +78,8 @@ def make_data(site_dir, which_data):
          "filename" : os.path.splitext(rmd_file[0])[0], 
          "dirname" : dir, 
          "title" : config['title'],
-         "due" : config['due']
+         "due" : config['due'],
+         "submit" : config['submit']
       }
     content_dict_list.append(this_dict)
     # back to top directory
