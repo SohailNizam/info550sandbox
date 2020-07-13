@@ -3,6 +3,7 @@ title: "Reproducible research"
 author: "David Benkeser"
 date: "2016/12/12"
 due: "2020/09/13"
+submit: "https://canvas.emory.edu/"
 output: pdf_document
 ---
 

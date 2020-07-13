@@ -23,17 +23,19 @@ permalink: /readings/
 	* [Sublime Text 3 Cheat Sheet](https://www.shortcutfoo.com/app/dojos/sublime-text-3-win/cheatsheet)
 	* [7 shortcuts of a highly effective Sublime Text user](https://kirankoduru.github.io/python/sublime-text-ninja.html)
 	* [Sublime Text Tutorial](https://www.tutorialspoint.com/sublime_text/index.htm)
+* [__Notepad++__](https://notepad-plus-plus.org/downloads/)
+	* [Notepad++ cheatsheet](http://www.cheat-sheets.org/saved-copy/Notepad++_Cheat_Sheet.pdf)
+	* [User manual](https://npp-user-manual.org/docs/getting-started/)
 * [__vim__](https://www.vim.org/)
 	* [Vim Tips Wiki](https://vim.fandom.com/wiki/Vim_Tips_Wiki)
 	* [vim tutorial](https://www.openvim.com/)
 	* [Learn vim For the Last Time: A Tutorial and Primer](https://danielmiessler.com/study/vim/)
+	* [Vim for People Who Think Things Like Vim Are Weird and Hard](https://csswizardry.com/2014/06/vim-for-people-who-think-things-like-vim-are-weird-and-hard/)
 	* [vim cheatsheet](https://vim.rtorr.com/)
 * [__emacs__](https://www.gnu.org/software/emacs/)
 	* [Emacs Keys Basics](http://ergoemacs.org/emacs/emacs_keys_basics.html)
 	* [Emacs tutorial (video)](https://www.youtube.com/watch?v=Iagbv974GlQ)
-* [__Notepad++__](https://notepad-plus-plus.org/downloads/)
-	* [Notepad++ cheatsheet](http://www.cheat-sheets.org/saved-copy/Notepad++_Cheat_Sheet.pdf)
-	* [User manual](https://npp-user-manual.org/docs/getting-started/)
+* [__micro__](https://micro-editor.github.io/)
 
 ## Command line
 
