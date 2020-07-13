@@ -3,6 +3,7 @@
 # configure your name and email if you have not done so
 git config --global user.email "benkeser@emory.edu"
 git config --global user.name "David Benkeser"
+git config --global http.postBuffer 100000000
 
 # clone the repository
 git clone -b gh-pages \
