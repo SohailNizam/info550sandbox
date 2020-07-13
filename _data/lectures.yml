@@ -4,3 +4,9 @@
   recording: ''
   title: INFO550 Front Matter
   tldr: Everything you need to know about the course.
+- dirname: 01_motivation
+  filename: motivation
+  reading: reproducible-research
+  recording: ''
+  title: Motivation
+  tldr: Why we should be motivated to improve reproducibility in our research
