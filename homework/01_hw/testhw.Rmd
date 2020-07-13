@@ -1,5 +1,5 @@
 ---
-title: "Reproducible research"
+title: "Test homework assignment"
 author: "David Benkeser"
 date: "2016/12/12"
 due: "2020/09/13"
