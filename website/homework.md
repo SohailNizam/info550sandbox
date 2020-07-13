@@ -6,7 +6,7 @@ permalink: /homework/
 
 Clicking the title of the homework will open the assignment pdf in a new tab.
 
-<i class="fab fa-github"></i> = Github directory for lecture; <i class="fab fa-r-project"></i> = source Rmarkdown document for homework; <i class="far fa-share-square"></i> = link to Canvas submission.
+<i class="fab fa-github"></i> = Github directory for lecture; <i class="fab fa-r-project"></i> = source Rmarkdown document for homework; <i class="fas fa-share-square"></i> = link to Canvas submission.
 
 {% assign num = site.url | size | minus: 1 %}
 

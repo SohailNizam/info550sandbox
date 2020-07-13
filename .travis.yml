@@ -33,7 +33,6 @@ pandoc_version: 2.3.1
 cache:
   directories:
     - ~/Rlib
-    - /home/travis/.TinyTeX
 
 # install the package and dependencies:
 # - create directory for R libraries (if not already exists)
