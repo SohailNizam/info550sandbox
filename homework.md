@@ -18,8 +18,8 @@ Clicking the title of the homework will open the assignment pdf in a new tab.
 <strong>due date:</strong> {{ homework.due }}</span>
 <strong style="font-size:100%; font-family: 'DM Sans', sans-serif; float:right; padding-right: .5em">
 	<a href="https://github.com/{{ site.githubdir}}/tree/master/homework/{{ homework.dirname }}"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
-<a href="https://github.com/{{ site.githubdir}}/tree/master/homework/{{ homework.dirname }}/{{ homework.filename}}.Rmd"><i class="fab fa-r-project"></i></a>&nbsp;&nbsp;
-<a href={{ homework.submit }}><i class="far fa-share-square"></i></a>&nbsp;&nbsp;
+	<a href="https://github.com/{{ site.githubdir}}/tree/master/homework/{{ homework.dirname }}/{{ homework.filename}}.Rmd"><i class="fab fa-r-project"></i></a>&nbsp;&nbsp;
+	<a href="{{ homework.submit }}"><i class="far fa-share-square"></i></a>
 </strong>
       </li>
 {% endfor %}
