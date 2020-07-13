@@ -11,6 +11,11 @@ permalink: /readings/
 * [Reproducible Research, Keith A. Baggerly and Donald A. Berry](https://magazine.amstat.org/blog/2011/01/01/scipolicyjan11/)
 * [Publish your computer code: it is good enough](https://www.nature.com/news/2010/101013/full/467753a.html)
 * [Implementing Reproducible Research](https://osf.io/s9tya/wiki/home/)
+* [State of the Art: Reproducibility in Artificial Intelligence](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/17248/15864)
+* [Show Your Work: Improved Reporting of Experimental Results](https://arxiv.org/pdf/1909.03004.pdf)
+* [A statistical definition for reproducibility and replicability](https://www.biorxiv.org/content/biorxiv/early/2016/07/29/066803.full.pdf)
+* [What does research reproducibility mean?](https://stm.sciencemag.org/content/8/341/341ps12)
+* [Reproducible Research in Computational Science](https://science.sciencemag.org/content/334/6060/1226)
 
 ## Text editors
 

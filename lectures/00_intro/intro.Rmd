@@ -1,5 +1,5 @@
 ---
-title: "Info for INFO550"
+title: "INFO550 Front Matter"
 author: "David Benkeser"
 tldr: "Everything you need to know about the course."
 recording: ""
@@ -74,6 +74,19 @@ enable us to make that happen.
 
 ---
 
+# What INFO550 is
+
+All of the things that I had to teach myself in grad school and beyond that 
+have proven helpful in my research.
+
+???
+
+I am not a true computer scientist (and it's not particularly close!). 
+I don't know everything, and my approach won't always be the most effective. 
+Please offer me suggestions along the way!
+
+---
+
 # What INFO550 is not
 
 A class...
@@ -86,9 +99,10 @@ A class...
 We will not discuss statistical methodology, though I may at 
 times show some basic statistics to illustrate software. 
 
-Learning these tools requires practice and (often a great deal of 
-frustration) -- it's part of the process. Thankfully, there is a 
-large online community that you can access if you know how. 
+Learning these tools requires practice and (often a great deal of) 
+frustration -- it's part of the process. Thankfully, there is a 
+large online community that you can access if you know how. Learning
+to google efficiently is surprisingly important. 
 
 ---
 
@@ -146,12 +160,15 @@ The slides are created using the [xaringan](https://slides.yihui.org/xaringan/#1
 To print the notes as a .pdf (allegedly works best using Chrome):
 
 * scroll through all slides so content loads;
-* File: Print (or `super + p`): Destination: Save as PDF
+* File: Print (or `super + p`): Destination: Save as PDF.
 
-The slides contain additional "presenter" notes and comments to make the
-material more stand alone. 
+The slides contain additional "presenter" notes. 
 
-* enter Presenter Mode by pressing `p`. 
+* Makes the material more self-contained. 
+* Makes sure I do not forget to tell you important things.
+* To view, enter *Presenter Mode* by pressing `p`.
 
+???
 
+`super` means `Cntrl` on Windows and `Command` on Mac
 

@@ -50,6 +50,8 @@ install:
   - Rscript -e 'if(!"xaringan" %in% rownames(installed.packages())) { install.packages("xaringan", dependencies = TRUE) }'
   - Rscript -e 'if(!"xaringanthemer" %in% rownames(installed.packages())) { install.packages("xaringanthemer", dependencies = TRUE) }'
   - Rscript -e 'if(!"tinytex" %in% rownames(installed.packages())) { install.packages("tinytex", dependencies = TRUE) }'
+  - Rscript -e 'if(!"scifigure" %in% rownames(installed.packages())) { install.packages("scifigure", dependencies = TRUE) }'
+  - Rscript -e 'if(!"grid" %in% rownames(installed.packages())) { install.packages("grid", dependencies = TRUE) }'
   - Rscript -e 'tinytex::install_tinytex()'
   - Rscript -e 'tinytex::tinytex_root()'
   - sudo apt install python3-pip
