@@ -54,8 +54,17 @@ permalink: /readings/
 
 ## Git/GitHub
 
+* [Github](https://github.com/)
+* [Github Tutorial](https://guides.github.com/activities/hello-world/)
+* [Git Handbook](https://guides.github.com/introduction/git-handbook/#basic-git)
+
 
 ## R Markdown
+
+* [R Markdown Tutorial](https://rmarkdown.rstudio.com/lesson-1.html)
+* [R Markdown Cheat Sheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+* [Math in R Markdown](https://www.calvin.edu/~rpruim/courses/s341/S17/from-class/MathinRmd.html)
+* [Creating Tables in R Markdown](http://haozhu233.github.io/kableExtra/awesome_table_in_html.html)
 
 
 ## GNU Makefiles
@@ -69,11 +78,23 @@ permalink: /readings/
 
 ## Docker
 
+* [Install Docker](https://www.docker.com/products/docker-desktop)
+* [What is Docker?](https://docs.docker.com/get-started/overview/)
+* [Docker Documentation](https://docs.docker.com/)
+* [Docker Tutorial](https://docker-curriculum.com/)
+* [List of Docker Resources](https://docs.docker.com/get-started/resources/)
+* [Play With Docker in Your Browser](https://labs.play-with-docker.com/)
+
 
 ## Continuous integration
 
 
 ## Python
+
+* [Install Anaconda](https://docs.anaconda.com/anaconda/install/)
+* [Anaconda Package Management](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-packages/)
+* [A Comprehensive Look at Basic Python](https://docs.python.org/3/tutorial/)
+* [A Brief Intro to Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html)
 
 
 ## Jupyter notebooks
